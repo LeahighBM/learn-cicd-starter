@@ -16,7 +16,7 @@ func TestGetAPIKey_noHeader(t *testing.T) {
 			header: http.Header{
 				"Authorization": []string{"ApiKey 12345-API"},
 			},
-			key:           "12345API",
+			key:           "12345-API",
 			error_message: nil,
 		},
 		"No Auth header": {
